@@ -761,15 +761,15 @@ video {
 }
 
 .bg-abu{
-  background-image: url('../Assets/background/bg-bercak.png');
+  background-image: url('../Assets/background/bg-bercak.webp');
 }
 
 .bg-home{
-  background-image: url('../Assets/background/home-bg.jpg');
+  background-image: url('../Assets/background/home-bg.webp');
 }
 
 .bg-welcome{
-  background-image: url('../Assets/background/opening-bg.jpg');
+  background-image: url('../Assets/background/opening-bg.webp');
 }
 
 .bg-cover{

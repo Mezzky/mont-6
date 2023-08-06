@@ -14,9 +14,9 @@ module.exports = {
       'desktop': '1280px',
     },
     backgroundImage: {
-      'abu': "url('../Assets/background/bg-bercak.png')",
-      'home': "url('../Assets/background/home-bg.jpg')",
-      'welcome': "url('../Assets/background/opening-bg.jpg')"
+      'abu': "url('../Assets/background/bg-bercak.webp')",
+      'home': "url('../Assets/background/home-bg.webp')",
+      'welcome': "url('../Assets/background/opening-bg.webp')"
     },
     extend: {
       fontFamily: {
