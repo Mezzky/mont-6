@@ -682,14 +682,6 @@ video {
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -824,19 +816,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.pr-20{
-  padding-right: 5rem;
-}
-
-.pr-\[100px\]{
-  padding-right: 100px;
 }
 
 .text-center{
@@ -997,6 +976,10 @@ video {
   }
 }
 
+/* .gallery-container img{
+    @apply w-52;
+} */
+
 /* Menu Toggle Animation */
 
 .hamburger-active > span:nth-child(1){
@@ -1054,20 +1037,16 @@ video {
 }
 
 @media (min-width: 768px){
-  .tablet\:col-start-2{
-    grid-column-start: 2;
-  }
-
   .tablet\:col-start-1{
     grid-column-start: 1;
   }
 
-  .tablet\:row-start-1{
-    grid-row-start: 1;
+  .tablet\:col-start-2{
+    grid-column-start: 2;
   }
 
-  .tablet\:row-start-2{
-    grid-row-start: 2;
+  .tablet\:row-start-1{
+    grid-row-start: 1;
   }
 
   .tablet\:grid-cols-2{
@@ -1082,16 +1061,17 @@ video {
     align-items: center;
   }
 
-  .tablet\:gap-0{
-    gap: 0px;
+  .tablet\:p-10{
+    padding: 2.5rem;
   }
 
   .tablet\:p-20{
     padding: 5rem;
   }
 
-  .tablet\:p-10{
-    padding: 2.5rem;
+  .tablet\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .tablet\:px-10{
@@ -1099,19 +1079,9 @@ video {
     padding-right: 2.5rem;
   }
 
-  .tablet\:py-40{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
   .tablet\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .tablet\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .tablet\:py-0{
@@ -1122,6 +1092,11 @@ video {
   .tablet\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .tablet\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -1138,53 +1113,25 @@ video {
     display: none;
   }
 
-  .laptop\:w-max{
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .laptop\:w-\[300px\]{
-    width: 300px;
-  }
-
   .laptop\:w-\[200px\]{
     width: 200px;
-  }
-
-  .laptop\:w-20{
-    width: 5rem;
-  }
-
-  .laptop\:w-32{
-    width: 8rem;
-  }
-
-  .laptop\:w-52{
-    width: 13rem;
   }
 
   .laptop\:w-\[500px\]{
     width: 500px;
   }
 
-  .laptop\:w-\[600px\]{
-    width: 600px;
-  }
-
   .laptop\:w-\[700px\]{
     width: 700px;
   }
 
-  .laptop\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .laptop\:w-max{
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .laptop\:flex-row{
     flex-direction: row;
-  }
-
-  .laptop\:items-center{
-    align-items: center;
   }
 
   .laptop\:gap-10{
@@ -1193,22 +1140,6 @@ video {
 
   .laptop\:gap-5{
     gap: 1.25rem;
-  }
-
-  .laptop\:gap-0{
-    gap: 0px;
-  }
-
-  .laptop\:gap-12{
-    gap: 3rem;
-  }
-
-  .laptop\:gap-24{
-    gap: 6rem;
-  }
-
-  .laptop\:self-end{
-    align-self: flex-end;
   }
 
   .laptop\:rounded-none{
@@ -1224,44 +1155,9 @@ video {
     padding: 5rem;
   }
 
-  .laptop\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .laptop\:py-24{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .laptop\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .laptop\:py-40{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
-  .laptop\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .laptop\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .laptop\:px-40{
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .laptop\:py-48{
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
 
   .laptop\:px-24{
@@ -1269,9 +1165,19 @@ video {
     padding-right: 6rem;
   }
 
-  .laptop\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .laptop\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .laptop\:py-40{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .laptop\:py-48{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 
   .laptop\:py-6{
@@ -1279,29 +1185,24 @@ video {
     padding-bottom: 1.5rem;
   }
 
-  .laptop\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .laptop\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .laptop\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .laptop\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .laptop\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .laptop\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .laptop\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .laptop\:font-normal{
