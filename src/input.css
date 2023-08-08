@@ -23,9 +23,13 @@
     @apply text-white py-1 px-2 bg-main rounded-md text-xl laptop:text-3xl hover:scale-110 duration-300;
 }
 
-/* .gallery-container img{
-    @apply w-52;
-} */
+.logo-gallery{
+    @apply w-[100px] laptop:w-[200px];
+}
+
+.img-container{
+    @apply relative grid grid-cols-1 gap-5 tablet:grid-cols-2 laptop:grid-cols-3;
+}
 
 /* Menu Toggle Animation */
 .hamburger-active > span:nth-child(1) {
