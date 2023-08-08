@@ -31,6 +31,10 @@
     @apply relative grid grid-cols-1 gap-5 tablet:grid-cols-2 laptop:grid-cols-3;
 }
 
+.logo-opening{
+    @apply w-[250px] laptop:w-[300px];
+}
+
 /* Menu Toggle Animation */
 .hamburger-active > span:nth-child(1) {
     @apply -rotate-[40deg];

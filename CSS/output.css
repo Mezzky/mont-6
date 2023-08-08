@@ -1000,6 +1000,16 @@ video {
   }
 }
 
+.logo-opening{
+  width: 250px;
+}
+
+@media (min-width: 1024px){
+  .logo-opening{
+    width: 300px;
+  }
+}
+
 /* Menu Toggle Animation */
 
 .hamburger-active > span:nth-child(1){
@@ -1131,10 +1141,6 @@ video {
 
   .laptop\:hidden{
     display: none;
-  }
-
-  .laptop\:w-\[300px\]{
-    width: 300px;
   }
 
   .laptop\:w-\[500px\]{
