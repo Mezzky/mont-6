@@ -27,7 +27,7 @@ module.exports = {
       colors: {
         main: '#CB9D4D',
         dark: '#222222',
-        text: '#A0A0A0',
+        text: '#3E3E3E',
         bg1: '#E4E4E4',
         bg2: '#FFFFFF',
       },
